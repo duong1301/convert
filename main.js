@@ -20,6 +20,7 @@ filePicker.addEventListener("change", (event) => {
     const copyButton = document.createElement("button");
     copyButton.addEventListener("click", (e) => {
         navigator.clipboard.writeText(ffmpegCommand)
+        alert("Copied the text: ",ffmpegCommand );
     })
     copyButton.textContent = "copy";
     li.appendChild(copyButton);
